@@ -1,6 +1,6 @@
 ##############################################################################
 #
-#    Copyright (C) 2015  ADHOC SA  (http://www.adhoc.com.ar)
+#    Copyright (C) 2019  ADHOC SA  (http://www.adhoc.com.ar)
 #    All Rights Reserved.
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -18,21 +18,26 @@
 #
 ##############################################################################
 {
-    "name": "Partner Sales ABC",
-    "version": "13.0.1.4.0",
-    "website": "www.adhoc.com.ar",
+    "name": "Portal Backend",
+    "version": "19.0.1.1.0",
+    "category": "Base",
+    "sequence": 14,
+    "summary": "",
     "author": "ADHOC SA",
+    "website": "www.adhoc.com.ar",
     "license": "AGPL-3",
-    "category": "Tools",
     "depends": [
-        # 'base',
-        # 'mail'
+        "portal",
     ],
     "data": [
-        "views/partner_view.xml",
+        "security/res_groups.xml",
+        "security/ir.model.access.csv",
+        "views/portal_templates.xml",
     ],
-    "test": [],
-    "installable": False,
+    "demo": [
+        "demo/res_users_demo.xml",
+    ],
+    "installable": True,
     "auto_install": False,
     "application": False,
 }

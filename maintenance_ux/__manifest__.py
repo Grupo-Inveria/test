@@ -1,6 +1,6 @@
 ##############################################################################
 #
-#    Copyright (C) 2015  ADHOC SA  (http://www.adhoc.com.ar)
+#    Copyright (C) 2020  ADHOC SA  (http://www.adhoc.com.ar)
 #    All Rights Reserved.
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,22 +17,30 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 {
-    "name": "Partner Sales ABC",
-    "version": "13.0.1.4.0",
-    "website": "www.adhoc.com.ar",
+    "name": "Maintenance UX",
+    "version": "19.0.1.2.0",
+    "category": "Projects & Services",
+    "sequence": 14,
+    "summary": "",
     "author": "ADHOC SA",
+    "website": "www.adhoc.com.ar",
     "license": "AGPL-3",
-    "category": "Tools",
+    "images": [],
     "depends": [
-        # 'base',
-        # 'mail'
+        "maintenance",
+        "rating",
     ],
     "data": [
-        "views/partner_view.xml",
+        "data/mail_template_data.xml",
+        "data/maintenance_data.xml",
+        "views/maintenance_views.xml",
     ],
-    "test": [],
-    "installable": False,
+    "demo": [
+        "demo/maintenance_demo.xml",
+    ],
+    "installable": True,
     "auto_install": False,
     "application": False,
 }
